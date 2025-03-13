@@ -29,7 +29,7 @@ model = Sequential([
 model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
 
 # Train model
-model.fit(train_generator, validation_data=test_generator, epochs=20)
+model.fit(train_generator, validation_data=train_generator, epochs=20)
 
 # Evaluate model accuracy
 test_loss, test_accuracy = model.evaluate(test_generator)
