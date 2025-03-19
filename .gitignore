@@ -3,3 +3,4 @@ dataset/
 model/
 uploads/
 node_modules/
+static/

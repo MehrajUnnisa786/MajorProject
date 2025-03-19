@@ -1,0 +1,80 @@
+/* Home Page Styling */
+
+.home-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Title Styling */
+
+.home-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Description */
+
+.home-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* CTA Button */
+
+.cta-button {
+    background-color: #356ddc;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c82333;
+}
+
+
+/* Section Headings */
+
+.side-heading {
+    font-size: 1.8rem;
+    color: #ff0000;
+    margin-top: 30px;
+}
+
+
+/* Cotton Image */
+
+.cotton-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About Cotton Text */
+
+.about-plant {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 15px 0;
+}

@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS  # Import CORS
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS  
 import os
 import numpy as np
 import tensorflow as tf
@@ -7,21 +7,26 @@ from werkzeug.utils import secure_filename
 from PIL import Image
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)  # Enable CORS
 
 # Load model
 MODEL_PATH = "model/cotton_disease_model.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 
 # Class labels
-class_labels = ["Bacterial Blight", "Curl Virus", "Fussarium Wilt", "Healthy"]
+class_labels = ["Bacterial Blight", "Curl Virus", "Fusarium Wilt", "Healthy"]
 
 # Function to preprocess image
 def preprocess_image(image_path):
-    img = Image.open(image_path).resize((224, 224))  # Resize to model input
+    img = Image.open(image_path).resize((256, 256))  # Resize to model input
     img = np.array(img) / 255.0  # Normalize
     img = np.expand_dims(img, axis=0)  # Add batch dimension
     return img
+
+# Route for serving dataset images
+@app.route("/static/dataset/<path:filename>")
+def serve_dataset(filename):
+    return send_from_directory("dataset", filename)
 
 # Route for prediction
 @app.route("/predict", methods=["POST"])

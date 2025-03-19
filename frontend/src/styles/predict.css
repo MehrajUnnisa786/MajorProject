@@ -1,0 +1,145 @@
+/* Predict Component Styling */
+
+.predict-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    /* Keep everything aligned within a fixed width */
+    margin: 40px auto;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Hide default file input */
+
+input[type="file"] {
+    display: none;
+}
+
+
+/* Custom "Choose File" button */
+
+.custom-file-upload {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    /* Ensure it's in a single vertical line */
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+
+/* Show selected file name */
+
+.file-name {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+/* Upload & Predict Button */
+
+.upload-button {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 15px;
+}
+
+.upload-button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+
+/* Image Preview */
+
+.preview-image {
+    max-width: 100%;
+    width: 300px;
+    /* Ensure it fits within the container */
+    max-height: 300px;
+    /* Set a limit for height */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    /* Ensures it fills the box while keeping aspect ratio */
+}
+
+.preview-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* Prediction Result */
+
+.prediction-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .predict-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .custom-file-upload,
+    .upload-button {
+        width: 100%;
+    }
+    .preview-image {
+        max-height: 200px;
+    }
+}
