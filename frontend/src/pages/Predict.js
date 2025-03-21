@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../styles/predict.css"; // Import the CSS file
+import "../styles/predict.css";
 
 const Predict = () => {
         const [selectedFile, setSelectedFile] = useState(null);
@@ -39,7 +39,7 @@ const Predict = () => {
                 <
                 h1 > Cotton Disease Detection < /h1>
 
-                { /* Custom File Upload Button */ } <
+                <
                 label htmlFor = "file-upload"
                 className = "custom-file-upload" >
                 Choose File <
@@ -49,10 +49,10 @@ const Predict = () => {
                 onChange = { handleFileChange }
                 />
 
-                { /* Display file name */ } {
+                {
                     selectedFile && < p className = "file-name" > { selectedFile.name } < /p>}
 
-                    { /* Show Preview Image */ } { preview && < img src = { preview }
+                    { preview && < img src = { preview }
                         alt = "Selected"
                         className = "preview-image" / > }
 

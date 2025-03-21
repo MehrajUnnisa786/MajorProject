@@ -1,56 +1,57 @@
- /* Help Page Styling */
- 
- .container {
-     width: 50px;
-     margin: 20px auto;
-     text-align: center;
-     padding: 20px;
- }
- /* Title */
- 
- h1 {
-     color: #dc3545;
-     padding: 15px;
- }
- /* Table Styling */
- 
- .disease-table {
-     width: 100%;
-     border-collapse: collapse;
-     background: white;
-     border-radius: 10px;
-     overflow: hidden;
-     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
- }
- 
- .disease-table th,
- .disease-table td {
-     padding: 12px;
-     /* Added padding */
-     border: 1px solid #ddd;
-     text-align: center;
- }
- 
- .disease-table th {
-     background: #0080ff;
-     color: white;
-     font-size: 18px;
- }
- /* Disease Image */
- 
- .disease-image {
-     width: 140px;
-     height: 140px;
-     border-radius: 8px;
-     object-fit: cover;
-     display: block;
-     margin: auto;
-     border: 2px solid #ddd;
- }
- /* Description Text */
- 
- .disease-description {
-     text-align: justify;
-     font-size: 1rem;
-     line-height: 1.5;
- }
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #dc3545;
+    padding: 15px;
+}
+
+.disease-table {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.disease-table th {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center
+}
+
+.disease-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.disease-table th {
+    background: #0080ff;
+    color: white;
+    font-size: 18px;
+}
+
+.disease-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border: 2px solid #ddd;
+}
+
+.disease-description {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+}

@@ -1,16 +1,12 @@
-/* Predict Component Styling */
-
 .predict-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items vertically */
     justify-content: center;
     text-align: center;
     padding: 30px;
     width: 90%;
     max-width: 600px;
-    /* Keep everything aligned within a fixed width */
     margin: 40px auto;
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
     border-radius: 12px;
@@ -24,15 +20,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-
-/* Hide default file input */
-
 input[type="file"] {
     display: none;
 }
-
-
-/* Custom "Choose File" button */
 
 .custom-file-upload {
     background-color: #007bff;
@@ -43,7 +33,6 @@ input[type="file"] {
     font-weight: bold;
     transition: background 0.3s ease-in-out;
     display: block;
-    /* Ensure it's in a single vertical line */
     text-align: center;
     width: 100%;
     max-width: 250px;
@@ -55,17 +44,11 @@ input[type="file"] {
     background-color: #0056b3;
 }
 
-
-/* Show selected file name */
-
 .file-name {
     font-size: 14px;
     color: #555;
     margin-top: 5px;
 }
-
-
-/* Upload & Predict Button */
 
 .upload-button {
     background: #28a745;
@@ -89,31 +72,21 @@ input[type="file"] {
     transform: scale(1.05);
 }
 
-
-/* Image Preview */
-
 .preview-image {
     max-width: 100%;
     width: 300px;
-    /* Ensure it fits within the container */
     max-height: 300px;
-    /* Set a limit for height */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 12px;
     margin-top: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     object-fit: cover;
-    /* Ensures it fills the box while keeping aspect ratio */
 }
 
 .preview-image:hover {
     transform: scale(1.05);
 }
-
-
-/* Prediction Result */
 
 .prediction-text {
     font-size: 20px;
@@ -126,9 +99,6 @@ input[type="file"] {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
-
-/* Responsive Adjustments */
 
 @media (max-width: 768px) {
     .predict-container {
