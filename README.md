@@ -24,8 +24,8 @@ Below is the high-level structure of our project, divided into **Frontend** and 
       <th>Backend</th>
     </tr>
     <tr>
-      <td><img src="Frontend.png" width="400"></td>
-      <td><img src="Backend.png" width="400"></td>
+      <td valign="top"><img src="Frontend.png" width="400"></td>
+      <td valign="top"><img src="Backend.png" width="400"></td>
     </tr>
   </table>
 </div>
