@@ -1,9 +1,10 @@
-.container {
+.help-container {
     width: 95%;
     max-width: 1200px;
     margin: 20px auto;
     text-align: center;
     padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
 }
 
 h1 {
