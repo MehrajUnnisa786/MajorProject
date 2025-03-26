@@ -16,5 +16,16 @@ Below is the high-level structure of our project, divided into **Frontend** and 
 - Ensures security, scalability, and performance.  
 
 ### Architecture Overview  
-![Frontend Architecture](Frontend.png)  
-![Backend Architecture](Backend.png)  
+
+<div align="center">
+  <table>
+    <tr>
+      <th>Frontend</th>
+      <th>Backend</th>
+    </tr>
+    <tr>
+      <td><img src="Frontend.png" width="400"></td>
+      <td><img src="Backend.png" width="400"></td>
+    </tr>
+  </table>
+</div>
